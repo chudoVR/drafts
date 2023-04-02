@@ -261,4 +261,9 @@ body {
     .content_photographer {
         background-position: left;
     }
+    
+     .btn {
+        font-size: 6px;
+        line-height: 20px;
+    }
 }
