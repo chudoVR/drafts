@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drafts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="content">
+        <div class="content_beautiful_places">
+            <a class="btn btn_travel" href="#">Travel</a>
+            <div class="beautiful_places">
+                <div class="user">
+                    <img class="img_photo" src="img/LukeCage.svg" alt="Luke Cage">
+                    <div>
+                        <p class="name">Luke Cage</p>
+                        <p class="date">October 11, 2016</p>
+                    </div>
+                </div>
+                <h2 class="title text_beautiful_places">The 10 most beautiful places you should visit in your life</h2>
+            </div>
+        </div>
+        <div class="block_text">
+            <p class="text">Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique
+                senectus
+                et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum.
+                Vivamus at
+                leo ut turpis posuere molestie. Nullam <span class="dots">...</span> <span class="more"> at turpis nec
+                    metus
+                    pharetra bibendum. Vivamus id
+                    urna et leo blandit consequat.</span> </p>
+            <button class="continue_reading">Continue Reading &rarr;</button>
+        </div>
+        <div class="content_perfect_gear">
+            <div class="user">
+                <img class="img_photo" src="img/JessicaSimpson.svg" alt="Jessica Simpson">
+                <div>
+                    <p class="name">Jessica Simpson</p>
+                    <p class="date">June 12, 2016</p>
+                </div>
+            </div>
+            <h2 class="title text_perfect_gear">Perfect gear to take with you if you go on a photography trip</h2>
+        </div>
+
+        <div class="block_text">
+            <p class="text">Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique
+                senectus
+                et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum.
+                Vivamus at
+                leo ut turpis posuere molestie. Nullam <span class="dots">...</span> <span class="more"> at turpis nec
+                    metus
+                    pharetra bibendum. Vivamus id
+                    urna et leo blandit consequat.</span> </p>
+            <button class="continue_reading">Continue Reading &rarr;</button>
+        </div>
+        <div class="content_photographer">
+            <a class="btn btn_photography" href="#">Photography</a>
+            <div class="photographer">
+                <div class="user">
+                    <img class="img_photo" src="img/LukeCage.svg" alt="Luke Cage">
+                    <div>
+                        <p class="name">Luke Cage</p>
+                        <p class="date">June 12, 2016</p>
+                    </div>
+                </div>
+                <h2 class="title text_photographer">We are looking for another photographer to join our group</h2>
+            </div>
+        </div>
+        <div class="block_text">
+            <p class="text">Vestibulum ut placerat nisl. Cras sed purus tellus. Pellentesque habitant morbi tristique
+                senectus
+                et netus et malesuada fames ac turpis egestas. Duis posuere nisi sit amet neque finibus vestibulum.
+                Vivamus at
+                leo ut turpis posuere molestie. Nullam <span class="dots">...</span> <span class="more"> at turpis nec
+                    metus
+                    pharetra bibendum. Vivamus id
+                    urna et leo blandit consequat.</span> </p>
+            <button class="continue_reading">Continue Reading &rarr;</button>
+        </div>
+        <script>
+            let btns = document.querySelectorAll('.continue_reading');
+            for (continue_reading of btns) {
+                continue_reading.addEventListener('click', function () {
+                    let block_text = this.closest('.block_text')
+                    let dots = block_text.querySelector('.dots');
+                    let more = block_text.querySelector('.more');
+                    if (dots.style.display === 'none') {
+                        dots.style.display = 'inline';
+                        more.style.display = 'none';
+                        this.textContent = 'Continue Reading →';
+                    } else {
+                        dots.style.display = 'none';
+                        more.style.display = 'inline';
+                        this.textContent = '← Hide text';
+                    }
+                });
+            }
+        </script>
+        <div class="content_read_more">
+            <h2 class="subtitle"> Want to read more?</h2>
+            <a class="btn btn_visit_blog_archive" href="#">Visit Blog Archive</a>
+        </div>
+    </main>
+</body>
+
+</html>
+<script></script>
