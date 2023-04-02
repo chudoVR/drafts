@@ -85,13 +85,18 @@
                     urna et leo blandit consequat.</span> </p>
             <button class="continue_reading">Continue Reading &rarr;</button>
         </div>
-        <script>
-            let btns = document.querySelectorAll('.continue_reading');
+        <div class="content_read_more">
+            <h2 class="subtitle"> Want to read more?</h2>
+            <a class="btn btn_visit_blog_archive" href="#">Visit Blog Archive</a>
+        </div>
+    </main>
+            <script>
+            const btns = document.querySelectorAll('.continue_reading');
             for (continue_reading of btns) {
                 continue_reading.addEventListener('click', function () {
-                    let block_text = this.closest('.block_text')
-                    let dots = block_text.querySelector('.dots');
-                    let more = block_text.querySelector('.more');
+                    const block_text = this.closest('.block_text');
+                    const dots = block_text.querySelector('.dots');
+                    const more = block_text.querySelector('.more');
                     if (dots.style.display === 'none') {
                         dots.style.display = 'inline';
                         more.style.display = 'none';
@@ -104,12 +109,6 @@
                 });
             }
         </script>
-        <div class="content_read_more">
-            <h2 class="subtitle"> Want to read more?</h2>
-            <a class="btn btn_visit_blog_archive" href="#">Visit Blog Archive</a>
-        </div>
-    </main>
 </body>
 
 </html>
-<script></script>
