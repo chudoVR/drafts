@@ -50,6 +50,17 @@ body {
     width: 60px;
 }
 
+.btn:hover {
+    background-color: #333333;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+
+
 .beautiful_places {
     padding-bottom: 40px;
 }
@@ -245,5 +256,9 @@ body {
     .text {
         font-size: 12px;
         line-height: 16px;
+    }
+
+    .content_photographer {
+        background-position: left;
     }
 }
